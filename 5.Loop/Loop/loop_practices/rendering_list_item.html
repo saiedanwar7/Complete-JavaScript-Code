@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendering List Item</title>
+</head>
+<body>
+    <h1>To-do List</h1>
+    <ul id="list">
+      <!-- li create here  -->
+    </ul>
+
+    <script type="text/javascript">
+        const todoItems =[
+        "go for a run",
+        "take out the trash",
+        "go grocery shopping",
+        "prepare pasta",
+        "take the car for a wash",
+        ];
+
+        let list = document.getElementById("list");
+        for(let index= 0; index < todoItems.length; index++){
+            const item = todoItems[index];
+            const li = document.createElement("li");
+            li.innerHTML = "<p>" + item + "</p>";
+            list.append(li);
+        }
+
+    </script>
+    
+</body>
+</html>

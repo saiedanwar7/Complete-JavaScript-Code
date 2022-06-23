@@ -1,0 +1,1 @@
+Link - https://dmitripavlutin.com/operations-on-arrays-javascript/
